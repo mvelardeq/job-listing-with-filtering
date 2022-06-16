@@ -1,0 +1,28 @@
+.header{
+    background-color: var(--desaturated-dark-cyan);
+    position: relative;    
+}
+.main{
+    min-width: 760px;
+    width: 80%;
+    margin: 4rem auto;
+    background-color: var(--light-grayish-cyan-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+@media(max-width:960px){
+    .main{
+        /* padding: 1rem 2rem; */
+        min-width: 280px;
+        width: 80%;
+        margin: 6rem auto;
+        gap: 3rem;
+    }
+    .header>img{
+        height: 9rem;   
+        object-fit: cover;
+        width: 100%;
+    }
+}

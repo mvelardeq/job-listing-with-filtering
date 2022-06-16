@@ -1,0 +1,120 @@
+.card-job{
+    height: 8.5rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.6rem 10px hsl(180deg 100% 93%);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.card-job.featured{
+    border-left: 4px solid var(--desaturated-dark-cyan);
+}
+.card-job img{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+.card-job .info-job{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.company-labels{
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+}
+.company-labels p{
+    margin-right: 0.3rem;
+    color: var(--desaturated-dark-cyan);
+    font-weight: 700;
+}
+.company-labels span.label{
+    padding: 0.3rem 0.4rem 0.2rem;
+    background-color: var(--desaturated-dark-cyan);
+    border-radius: 0.6rem;
+    color: #fff;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+span.label.new{
+    background-color: var(--desaturated-dark-cyan);
+}
+span.label.l-featured{
+    background-color: #000;
+}
+.title-job{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.more-info{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: var(--dark-grayish-cyan);
+    font-size: 0.9rem;
+}
+.more-info p{
+    height: 100%;
+}
+.horizontal-line{
+    width: 100%;
+    border-top: 1px solid rgb(197, 197, 197);
+    display: none;
+}
+.card-job .requierements{
+    flex: auto;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    color: var(--desaturated-dark-cyan);
+    font-weight: 700;
+}
+
+.card-job .requierements span{
+    cursor: pointer;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+}
+.card-job .requierements span:hover{
+    color: #fff;
+    background-color: var(--desaturated-dark-cyan);
+}
+
+@media(max-width:960px){
+    .card-job {
+        height: auto;
+        padding: 2.5rem 2rem 1.5rem;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-job img{
+        width: 3.5rem;
+        height: 3.5rem;
+        position: absolute;
+        top:0;
+        transform: translateY(-50%);
+    }
+    .card-job .info-job{
+        height: 80px;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-between; */
+    }
+    .horizontal-line{
+        display: block;
+    }
+    .card-job .requierements{
+        flex: auto;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        color: var(--desaturated-dark-cyan);
+        font-weight: 700;
+    }
+}
